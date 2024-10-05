@@ -1,5 +1,9 @@
+
+:root{    
+    --highlight-color: steelblue;
+}
 nav {
-    background-color: steelblue;
+    background-color: var(--highlight-color);
     padding: 10px;
 }
 nav a {
@@ -11,19 +15,23 @@ h1 {
     color: steelblue;
 }
 img {
+    float: right;
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    margin: 20px;
+    border: 1px solid var(--highlight-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px
 }
 p{
     padding: 10px;
 }
 main {
     max-width: 840px;
+    margin: 10px;
 }
 aside {
+    position: relative;
 	width: 20rem;
 	margin: 1rem;
 	border: 1px solid rgba(0,0,0,0.2);
