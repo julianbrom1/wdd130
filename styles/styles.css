@@ -38,6 +38,11 @@ aside {
 	width: 20rem;
     text-align: center;
 }
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 120px;
+}
 aside img {
     width: 200px;
     height: auto;
@@ -49,7 +54,7 @@ main img {
 }
 p {padding: 0;}
 footer {
-    margin-top: 15px;
+    margin-top: 450px;
     border-top: 1px solid #000;
     text-align: center;
 }
