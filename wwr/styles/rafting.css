@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {    
+    --highlight-color: steelblue;
+}
+div h1 {
+    color: #F0DCCA;
+    position: absolute;
+    text-align: center;
+}
+h2 { 
+    color:#F0DCCA
+}
+main {
+	max-width: 2000px;
+	margin: 5rem;
+	font-family: Roboto, Arial, sans-serif;
+}
+.logo-box {
+    width: 100px;
+    height: 110px;
+    margin: 20px;
+    border: 1px solid var(--highlight-color);
+    padding: 2px;
+    box-shadow: 0 0 30px;
+    background-size: cover;
+    
+}
+.hero {
+    position: relative;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: ;
+}
+
+article{
+    position: relative;
+}
+article img {
+    float: right;
+    position: relative;
+}
+p{
+    padding: 50px;
+    color: #CDC6A5
+}
