@@ -1,76 +1,157 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 :root {
-    --primary-color:#696D7D;
-    --secondary-color:#6F9283;
-    --accent1-color:#CDC6A5;
-    --accent2-color:#F0DCCA;
-    --accent3-color:#8D9F87;
+    --primary-color: #F2CC8F;
+    --secondary-color: #81B29A;
+    --accent1-color: #3D405B;
+    --accent2-color: #E07A5F;
+    --accent1-see-through: #F4F1DE;
 }
-.hero{
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-items: center;
+    align-items: center;
+    background: var(--primary-color);
+    max-width: 100%;
+}
+header img {
+    width: 150px;
+    padding: 1px;
+    border: 2px solid var(--secondary-color);
+    margin: 10px 0px 5px 0px;
+}
+header nav a {
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    background: var(--accent1-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+    width: 150px;
+    text-align: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
+    gap: 0;
+}
+.hero img {
+    display: block;
     width: 100%;
     height: auto;
-    background: url(images/hero.jpg) no-repeat center center;
-    background-size: cover;
-    display: block;
+    position: relative;
+    margin: 10px 0 0 0;
 }
-.hero h1{
+.hero h1 {
     position: absolute;
-    top: 10%;
-    left: 22%;
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 19%;
+    left: 23.2%;
+    background-color: var(--accent2-see-through);
+    font-weight: 400;
+    width: 1000px;
+    height: 70px;
 }
 .hero article {
     position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 128, 0.6);  /* Semi-transparent background */
-    padding: 15px;
-    max-width: 50%;  /* Limit the width */
-    color: white;
-    border-radius: 10px;
-    gap: 10px;  /* Add spacing between image and text */
-  }
-  
-  .hero article img {
-    float: right;
-    position: relative;
-    width: 80px;
-    height: auto;
+    opacity: 1;
+    top: 83%;
+    left: 21%;
+    background-color: var(--accent1-see-through);
+    padding: 5px;
+	box-shadow: 0 0 30px #111;
     border-radius: 5px;
 }
-
-div h1 {
-    color: #CDC6A5;
-    position: absolute;
+.hero article img{
+    width: 100px;
+    height: auto;
+    float: right;
+    border: 1px solid black;
+    padding: 1px;
+}
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 110px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    background-color: var(--accent1-color);
+    border: 1px solid var(--primary-color);
+    padding: 0 5px 5px 5px;
+    margin: 10px 0 0 0;
+}
+.history h2 {
+    grid-column: 1/-1;
+    font-weight: 400;
+}
+.history img {
+    width: 300px;
+    height: 100%;
+    padding: 1px;
+    border: 1px solid black;
+}
+.adventure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent1-color);
+    padding: 0 5px 5px 5px;
+    margin: 10px 0 0 0;
+}
+.adventure h2{
+    grid-column: 1/-1;
+    font-weight: 400;
+}
+.adventure img{
+    width: 150px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1px;
+}
+.adventure caption{
+    font-size: 14px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2000px;
+    background: var(--primary-color);
+    padding: 10px;
+    margin: 10px 0 0 0;
 }
 
-section h2 { 
-    color:#CDC6A5;
-    margin-top: 15px;
-    margin-bottom: 10px;
+footer p {
+    color: #000000;
 }
 
-p{
-    color: #F0DCCA;
-    margin-top: 0px;
-}
-
-nav{
+footer a {
     text-decoration: none;
 }
-
-nav a{
-    text-decoration: none;
+.sociallinks img{
+    width: 40px;
+    height: auto;
 }
-main {
-	max-width: 1500px;
-	margin: 0 auto;
-    padding: 0 20px;
-	font-family: Roboto, Arial, sans-serif;
+
+body, html {
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
