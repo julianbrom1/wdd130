@@ -3,7 +3,8 @@
     --secondary-color: #81B29A;
     --accent1-color: #3D405B;
     --accent2-color: #E07A5F;
-    --accent1-see-through: #F4F1DE;
+    --accent1-see-through: #f4f1ded3;
+    --accent2-see-through: #858376d3;
 }
 header {
     display: grid;
@@ -32,7 +33,6 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    gap: 0;
 }
 .hero img {
     display: block;
@@ -47,24 +47,23 @@ header nav {
     justify-content: center;
     align-items: center;
     top: 19%;
-    left: 23.2%;
+    left: 23%;
     background-color: var(--accent2-see-through);
-    font-weight: 400;
+    font-weight: 700;
     width: 1000px;
     height: 70px;
 }
 .hero article {
     position: absolute;
-    opacity: 1;
     top: 83%;
-    left: 21%;
+    left: 15%;
     background-color: var(--accent1-see-through);
     padding: 5px;
 	box-shadow: 0 0 30px #111;
     border-radius: 5px;
 }
 .hero article img{
-    width: 100px;
+    width: 150px;
     height: auto;
     float: right;
     border: 1px solid black;
@@ -118,6 +117,11 @@ header nav {
     font-size: 14px;
     text-align: center;
 }
+.adventure figure{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--accent1-color)
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -127,11 +131,9 @@ footer {
     padding: 10px;
     margin: 10px 0 0 0;
 }
-
 footer p {
     color: #000000;
 }
-
 footer a {
     text-decoration: none;
 }
@@ -139,19 +141,20 @@ footer a {
     width: 40px;
     height: auto;
 }
-
 body, html {
     width: 1600px;
     height: 100%;
     margin: 0 auto;
 }
-
-.nunito-sans-<uniquifier> {
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+h1, h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: var(--secondary-color);
+    width: auto;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--secondary-color)
 }
