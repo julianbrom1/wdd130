@@ -158,3 +158,8 @@ body {
     font-weight: 300;
     color: var(--secondary-color)
 }
+. team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
