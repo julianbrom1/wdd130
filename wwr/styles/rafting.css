@@ -2,8 +2,7 @@
     --primary-color: #984447;
     --secondary-color: #476c9b;
     --accent1-color: #add9f4;
-    --accent2-color: #468C98;
-    --accent3-color: #101419;
+    --accent2-color: #101419;
     --accent1-see-through: #f4f1ded3;
     --accent2-see-through: #858376d3;
 }
@@ -14,6 +13,7 @@ header {
     align-items: center;
     background: var(--primary-color);
     max-width: 100%;
+    color: white;
 }
 header img {
     width: 150px;
@@ -26,7 +26,7 @@ header nav a {
     border: 1px solid var(--secondary-color);
     background: var(--accent1-color);
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--accent2-color);
     width: 150px;
     text-align: center;
 }
@@ -121,7 +121,7 @@ header nav {
 .adventure figure{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    color: var(--accent1-color)
+    color: var(--accent2-color)
 }
 footer {
     display: flex;
@@ -133,7 +133,7 @@ footer {
     margin: 10px 0 0 0;
 }
 footer p {
-    color: #000000;
+    color: white;
 }
 footer a {
     text-decoration: none;
@@ -151,13 +151,13 @@ h1, h2{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 100;
     text-align: center;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     width: auto;
 }
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    color: var(--secondary-color)
+    color: var(--accent2-color)
 }
 .team {
     display: grid;
@@ -188,7 +188,7 @@ body {
 .team figure {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    color: var(--accent1-color)
+    color: var(--accent2-color)
 }
 .company_info {
     display: grid;
