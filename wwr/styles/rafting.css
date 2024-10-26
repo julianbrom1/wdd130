@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #F2CC8F;
-    --secondary-color: #81B29A;
-    --accent1-color: #3D405B;
-    --accent2-color: #E07A5F;
+    --primary-color: #984447;
+    --secondary-color: #476c9b;
+    --accent1-color: #add9f4;
+    --accent2-color: #468C98;
+    --accent3-color: #101419;
     --accent1-see-through: #f4f1ded3;
     --accent2-see-through: #858376d3;
 }
@@ -46,7 +47,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 19%;
+    top: 30%;
     left: 23%;
     background-color: var(--accent2-see-through);
     font-weight: 700;
@@ -150,7 +151,7 @@ h1, h2{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 100;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--accent3-color);
     width: auto;
 }
 body {
@@ -158,8 +159,63 @@ body {
     font-weight: 300;
     color: var(--secondary-color)
 }
-. team {
+.team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent1-color);
+    padding: 0 5px 5px 5px;
+    margin: 10px 0 0 0;
+}
+.team img {
+    width: 150px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1px;
+}
+.team h2 {
+    grid-column: 1/-1;
+    font-weight: 400;
+}
+.team caption {
+    font-size: 14px;
+    text-align: center; 
+}
+.team figure {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--accent1-color)
+}
+.company_info {
+    display: grid;
+    grid-template-rows: 110px 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    background-color: var(--accent1-color);
+    border: 1px solid var(--primary-color);
+    padding: 0 5px 5px 5px;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+}
+.company_info h1 {
+    grid-column: 1/-1;
+    font-weight: 400;
+}
+.company_info p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding: 5px 5px 5px 5px;
+    margin: 0 0 0 0;
     
+}
+.company_info p iframe {
+    align-items: right;
 }
